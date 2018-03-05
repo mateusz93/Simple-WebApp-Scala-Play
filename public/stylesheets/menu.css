@@ -20,9 +20,8 @@ h4 {
 .jumbotron {
     background-color: #750105;
     color: #fff;
-    padding: 60px 25px;
+    padding: 100px 25px;
     font-family: Montserrat, sans-serif;
-    margin-bottom: 0px;
 }
 .container-fluid {
     padding: 60px 50px;
@@ -132,6 +131,9 @@ footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
     color: #750105;
+}
+.input-append .btn.dropdown-toggle {
+    float: none;
 }
 @media screen and (max-width: 768px) {
     .col-sm-4 {
