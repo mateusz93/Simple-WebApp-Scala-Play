@@ -14,9 +14,10 @@ scalaVersion := "2.12.2"
 
 libraryDependencies += jdbc
 libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.41"
+libraryDependencies ++= Seq(
+  "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.0" % "test"
+)
 
 libraryDependencies ++= Seq( jdbc , ehcache , ws , specs2 % Test , guice )
 
-unmanagedResourceDirectories in Test <+=  baseDirectory ( _ /"target/web/public/test" )  
-
-      
+unmanagedResourceDirectories in Test <+=  {baseDirectory ( _ /"target/web/public/test" )}
